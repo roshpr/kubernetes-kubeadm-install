@@ -10,13 +10,13 @@
 * Prepare install config with the VM IPs. The below step will populate hosts.yaml with the node ips in variable IPS given below.
 ```
   * declare -a IPS=(172.31.6.123 172.31.38.116)
-  * CONFIG_FILE=inventory/mycluster/hosts.yaml  python3 contrib/inventory_builder/inventory.py ${IPS[@]}
+  * CONFIG_FILE=inventory/newcluster/hosts.yaml  python3 contrib/inventory_builder/inventory.py ${IPS[@]}
 ``` 
-* Uncomment the kubenetes read port (line content given below) in the file : inventory/mycluster/group_vars/all/all.yml
+* Uncomment the kubenetes read port (line content given below) in the file : inventory/newcluster/group_vars/all/all.yml
   * ```kube_read_only_port: 10255``` 
 * Create a ssh key and copy the public key content to the all nodes .ssh/authorized_keys file and place the private key in installation node.
 * Install K8s
-  * ```ansible-playbook -i inventory/mycluster/hosts.yaml cluster.yml -u ubuntu -b```
+  * ```ansible-playbook -i inventory/newcluster/hosts.yaml cluster.yml -u ubuntu -b```
 
 * Output
 ```
