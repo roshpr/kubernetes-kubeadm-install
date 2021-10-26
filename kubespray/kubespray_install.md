@@ -1,4 +1,7 @@
-##PreReq
+[[_TOC_]]
+# Kubespray standalone node install
+
+## PreReq
 * The installation is for standalone Kubernetes.
 * These steps can be followed to run K8 install from within K8 node to be installed or a separate bootstrap or installer VM.
 * Below steps are tested with user root only.
