@@ -1,4 +1,3 @@
-[[_TOC_]]
 # Kubespray standalone node install
 
 ## PreReq
