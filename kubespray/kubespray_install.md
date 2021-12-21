@@ -31,7 +31,10 @@
   * ```ssh-keygen -b2048``` 
   * ```cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys```
 * Install K8s
-  * ```ansible-playbook -i inventory/$CLUSTER_FOLDER/hosts.yaml cluster.yml -u ubuntu -b```
+  * **Local installation**
+  * ```$ ansible-playbook -i inventory/$CLUSTER_FOLDER/hosts.ini --connection=local -b -v cluster.yml```
+  * **Remote installation**
+  * ```$ ansible-playbook -i inventory/$CLUSTER_FOLDER/hosts.yaml -u $USERNAME -b -v --private-key=~/.ssh/id_rsa cluster.yml```
 
 * Output
 ```
