@@ -40,3 +40,4 @@ localhost                  : ok=4    changed=0    unreachable=0    failed=0    s
 node1                      : ok=539  changed=15   unreachable=0    failed=0    skipped=1157 rescued=0    ignored=1
 node2                      : ok=347  changed=13   unreachable=0    failed=0    skipped=644  rescued=0    ignored=1
 ```
+* Additional configuration can be done using the steps in below URL: https://eminaktas.medium.com/single-node-k8s-cluster-with-kubespray-49588410d9d4
