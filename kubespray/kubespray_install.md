@@ -24,7 +24,8 @@
 * Uncomment the kubenetes read port (line content given below) in the file : inventory/newcluster/group_vars/all/all.yml
   * ```kube_read_only_port: 10255``` 
 * Create a ssh key and copy the public key content to the all nodes .ssh/authorized_keys file and place the private key in installation node.
-  * ```ssh-keygen``` 
+  * ```ssh-keygen -b2048``` 
+  * ```cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys```
 * Install K8s
   * ```ansible-playbook -i inventory/newcluster/hosts.yaml cluster.yml -u ubuntu -b```
 
