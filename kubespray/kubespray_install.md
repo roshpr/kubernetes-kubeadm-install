@@ -4,7 +4,10 @@
 * The installation is for standalone Kubernetes.
 * These steps can be followed to run K8 install from within K8 node to be installed or a separate bootstrap or installer VM.
 * Below steps are tested with user root only.
-* 
+# Install kubernetes using kubespray 
+* Install kubectl on Linux
+  * ```curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"```
+  * ```chmod +x kubectl; mv kubectl /usr/bin``` 
 ### Initial setup
 
 * Download kubespray code
