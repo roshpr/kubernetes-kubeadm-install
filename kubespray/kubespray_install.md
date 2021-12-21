@@ -13,6 +13,7 @@
   * ```apt-get install ansible```
 * Install python dependencies of kubespray
   * ```pip3 install -r requirements.txt```
+  * ```pip3 install -y ruamel.yaml```
 * Make a copy of the default sample cluster config
   * ```cp -r inventory/sample inventory/newcluster``` 
 * Prepare install config with the VM IPs. The below step will populate hosts.yaml with the node ips in variable IPS given below.
